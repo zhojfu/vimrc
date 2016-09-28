@@ -1,0 +1,79 @@
+let mapleader = ","
+let g:mapleader = ","
+
+set history=50
+set number
+set ruler
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+set expandtab
+set smarttab
+set shiftwidth=4
+set tabstop=4
+set backspace=indent,eol,start
+set linebreak
+set wrap
+" Yanks go on clipboard instead.
+set clipboard=unnamed
+set scrolloff=10
+
+map j gj
+map k gk
+
+map <leader>w :w!<cr>
+imap <leader>w <esc>:w!<cr>
+
+
+map <space> /
+map <c-space> ?
+
+map <silent> <leader><cr> :noh<cr>
+
+map <M-1> 1gt
+map <M-2> 2gt
+map <M-3> 3gt
+map <M-4> 4gt
+map <M-5> 5gt
+map <M-6> 6gt
+map <M-7> 7gt
+map <M-8> 8gt
+map <M-9> 9gt
+map! <M-1> <esc>1gt
+map! <M-2> <esc>2gt
+map! <M-3> <esc>3gt
+map! <M-4> <esc>4gt
+map! <M-5> <esc>5gt
+map! <M-6> <esc>6gt
+map! <M-7> <esc>7gt
+map! <M-8> <esc>8gt
+map! <M-9> <esc>9gt
+
+map 0 ^
+
+nmap <S-TAB> <<i
+imap <S-TAB> <Esc><<i
+
+nmap <M-j> mz:m+<cr>`z
+nmap <M-k> mz:m-2<cr>`z
+
+nmap Y y$
+
+nmap <S-Enter> O<Esc>j
+nmap <leader>v O<esc>p
+map! <leader>v <esc>O<esc>p
+
+vmap <leader>( <esc>`>a)<esc>`<i(<esc>
+vmap <leader>[ <esc>`>a]<esc>`<i[<esc>
+vmap <leader>{ <esc>`>a}<esc>`<i{<esc>
+vmap <leader>" <esc>`>a"<esc>`<i"<esc>
+vmap <leader>' <esc>`>a'<esc>`<i'<esc>
+
+imap <leader>( <esc>`>a)<esc>`<i(<esc>
+imap <leader>[ <esc>`>a]<esc>`<i[<esc>
+imap <leader>{ <esc>`>a}<esc>`<i{<esc>
+imap <leader>" <esc>`>a"<esc>`<i"<esc>
+imap <leader>' <esc>`>a'<esc>`<i'<esc>
+
+nmap <leader>a ggVG
